@@ -24,7 +24,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-start':'#FF8938',
+            'gradient-end': '#FF0',
           }
         }
       }
@@ -41,20 +42,22 @@
 <body class="manrope">
 
     <header class="container mx-auto">
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div class="my-20">
+        <div class="flex justify-between items-center flex-col lg:flex-row">
           <div>
             <h1 class="text-7xl font-extrabold">It's Good <br> Tea Time At <br> The Tea House </h1>
             <p class="py-6">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
               quasi. In deleniti eaque aut repudiandae et a id nisi.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </button>
           </div>
        <div>
         <img
         src="images/banner.png"
-        class="max-w-sm" />
+        class="" />
         <!-- rating badge -->
         <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
           <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -157,7 +160,7 @@
           </section>
 
        <!-- client section -->
-          <section class="my-24 flex flex-col  lg:flex-row rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24 gap-12">
+          <section class="my-24 flex flex-col  lg:flex-row rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24 gap-12">
               <div class="flex lg:pr-28 items-center">
                 <div class="space-y-5 ">
                   <h2 class="text-xl font-extrabold text-white">Meet Our <br>
@@ -206,8 +209,59 @@
 
     </main>
 
-    <footer>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content p-10">
+          <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p> <span>Ready to get started?</span>
+            <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white"> Get Started</button></p>
+          </div>
+
+    <div class="footer ">
+       
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <form>
+        <h6 class="footer-title">Newsletter</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="py-4 bg-transparent border-b-2 border-black outline-none" />
+            <button class="btn text-white join-item rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </fieldset>
+      </form>
+      
+    </div>
+
+      <div class="mt-10 text-center">
+        <p>Copyright © 2024- All right reserved by ACME Industries Ltd</p>
+      </div>
 
     </footer>
+
+    
 </body>
 </html>
